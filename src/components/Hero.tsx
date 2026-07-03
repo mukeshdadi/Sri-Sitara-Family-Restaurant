@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
-  const handleOrder = () => {
-    window.open('https://wa.me/919505634433', '_blank');
-  };
+  // const handleOrder = () => {
+  //   window.open('https://wa.me/919505634433', '_blank');
+  // };
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center pt-20 overflow-hidden" style={{ padding: 0 }}>

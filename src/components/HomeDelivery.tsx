@@ -2,9 +2,9 @@ import React from 'react';
 import { Truck } from 'lucide-react';
 
 const HomeDelivery: React.FC = () => {
-  const handleOrder = () => {
-    window.open('https://wa.me/919505634433', '_blank');
-  };
+  // const handleOrder = () => {
+  //   window.open('https://wa.me/919505634433', '_blank');
+  // };
 
   return (
     <section className="bg-secondary relative overflow-hidden py-24">

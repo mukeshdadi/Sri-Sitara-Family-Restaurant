@@ -21,9 +21,9 @@ const Navbar: React.FC = () => {
     { name: 'Contact', href: '#contact', icon: '📍' }
   ];
 
-  const handleOrderNow = () => {
-    window.open('https://wa.me/919505634433', '_blank');
-  };
+  // const handleOrderNow = () => {
+  //   window.open('https://wa.me/919505634433', '_blank');
+  // };
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-5'}`}>
