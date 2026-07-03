@@ -4,7 +4,7 @@ const Welcome: React.FC = () => {
   return (
     <section id="welcome" className="bg-primary">
       <div className="container mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
           
           {/* Left Text */}
           <div className="reveal">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FloatingContact: React.FC = () => {
   return (
-    <div className="fixed bottom-6 right-6 z-[100] flex flex-col gap-4">
+    <div className="fixed bottom-6 right-6 z-[9999] flex flex-col gap-4" style={{ position: 'fixed' }}>
       {/* Phone */}
       <a 
         // href="tel:9505634433" 

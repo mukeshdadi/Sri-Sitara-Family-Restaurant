@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
   />       
    <div>
             <h1 className="text-2xl font-bold text-accent" style={{ fontFamily: 'var(--font-heading)' }}>Sri Sitara</h1>
-            <p className="text-xs text-text-light hidden md:block">Family Restaurant</p>
+            <p className="text-xs text-text-light mt-0.5">Family Restaurant</p>
           </div>
         </div>
 
