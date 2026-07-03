@@ -1,0 +1,76 @@
+import React from 'react';
+import { MapPin, Phone, Navigation } from 'lucide-react';
+
+const Contact: React.FC = () => {
+  return (
+    <section id="contact" className="bg-primary py-24">
+      <div className="container mx-auto">
+        <h2 className="section-title reveal">Visit Us</h2>
+        <p className="section-subtitle reveal">Come and experience the authentic taste.</p>
+
+        <div className="grid lg:grid-cols-2 gap-12 bg-secondary rounded-3xl overflow-hidden border border-gray-800 shadow-2xl reveal">
+          
+          {/* Contact Details */}
+          <div className="p-10 lg:p-16 flex flex-col justify-center">
+            <h3 className="text-3xl font-heading text-white mb-8">Sri Sitara Family Restaurant</h3>
+            
+            <div className="space-y-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-accent shrink-0 border border-gray-800">
+                  <MapPin size={24} />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold text-lg mb-2">Location</h4>
+                  <p className="text-gray-400 font-light leading-relaxed">
+                    Yanam Road, Annaipeta<br/>
+                    Draksharama, Ramachandrapuram<br/>
+                    Konaseema, Andhra Pradesh<br/>
+                    533262
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-highlight shrink-0 border border-gray-800">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold text-lg mb-2">Phone Number</h4>
+                  <p className="text-gray-400 font-light">9505634433</p>
+                </div>
+              </div>
+            </div>
+
+            <a 
+              href="https://maps.google.com/?q=Draksharama,Andhra+Pradesh" 
+              target="_blank" 
+              rel="noreferrer"
+              className="mt-12 btn-outline flex items-center justify-center gap-2 w-full md:w-auto"
+            >
+              <Navigation size={20} />
+              Get Directions
+            </a>
+          </div>
+
+          {/* Map (Placeholder for iframe) */}
+          <div className="h-96 lg:h-auto min-h-[400px] relative grayscale hover:grayscale-0 transition duration-1000">
+             <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15264.426743936647!2d82.0463996229562!3d16.786522851457497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a382103db8d5cf1%3A0x6a0c5c8a9561cc2c!2sDraksharamam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1704200000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps"
+                className="absolute inset-0"
+              ></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
