@@ -21,9 +21,9 @@ const Navbar: React.FC = () => {
     { name: 'Contact', href: '#contact', icon: '📍' }
   ];
 
-  // const handleOrderNow = () => {
-  //   window.open('https://wa.me/919505634433', '_blank');
-  // };
+  const handleOrderNow = () => {
+    window.open('https://wa.me/919505634433', '_blank');
+  };
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-5'}`}>
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
           <button 
-          // onClick={handleOrderNow}
+          onClick={handleOrderNow}
            className="btn-primary">
             Order Now
           </button>
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
             ))}
           </ul>
           <button 
-          // onClick={handleOrderNow}
+          onClick={handleOrderNow}
            className="btn-primary w-full mt-4 text-center">
             Order Now
           </button>

@@ -41,15 +41,35 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <a 
-              href="https://maps.google.com/?q=Draksharama,Andhra+Pradesh" 
-              target="_blank" 
-              rel="noreferrer"
-              className="mt-12 btn-outline flex items-center justify-center gap-2 w-full md:w-auto"
-            >
-              <Navigation size={20} />
-              Get Directions
-            </a>
+            <a
+  href="https://maps.google.com/?q=Draksharama,Andhra+Pradesh"
+  target="_blank"
+  rel="noreferrer"
+  className="
+    mt-12
+    inline-flex
+    items-center
+    justify-center
+    gap-3
+    whitespace-nowrap
+    rounded-full
+    border-2
+    border-accent
+    px-8
+    py-4
+    text-accent
+    font-semibold
+    transition-all
+    duration-300
+    hover:bg-accent
+    hover:text-primary
+    w-full
+    sm:w-auto
+  "
+>
+  <Navigation size={20} className="shrink-0" />
+  <span>Get Directions</span>
+</a>
           </div>
 
           {/* Map (Placeholder for iframe) */}

@@ -2,9 +2,9 @@ import React from 'react';
 import { Truck } from 'lucide-react';
 
 const HomeDelivery: React.FC = () => {
-  // const handleOrder = () => {
-  //   window.open('https://wa.me/919505634433', '_blank');
-  // };
+  const handleOrder = () => {
+    window.open('https://wa.me/919505634433', '_blank');
+  };
 
   return (
     <section className="bg-secondary relative overflow-hidden py-24">
@@ -30,7 +30,7 @@ const HomeDelivery: React.FC = () => {
             </p>
             
             <button 
-            // onClick={handleOrder}
+            onClick={handleOrder}
              className="btn-primary text-xl px-10 py-4 shadow-[0_0_30px_rgba(230,126,34,0.3)] hover:shadow-[0_0_40px_rgba(230,126,34,0.5)]">
               Order on WhatsApp
             </button>

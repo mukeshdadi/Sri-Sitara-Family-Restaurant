@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
-  // const handleOrder = () => {
-  //   window.open('https://wa.me/919505634433', '_blank');
-  // };
+  const handleOrder = () => {
+    window.open('https://wa.me/919505634433', '_blank');
+  };
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center pt-20 overflow-hidden" style={{ padding: 0 }}>
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-20 text-center px-5 flex flex-col items-center max-w-4xl mx-auto reveal active">
         <h3 className="text-highlight text-xl md:text-2xl font-medium tracking-wider uppercase mb-4" style={{ fontFamily: 'var(--font-body)' }}>
-          Sri Sitara Family Restaurant
+          {/* Sri Sitara Family Restaurant */}
         </h3>
         
         <p className="text-gray-300 text-sm md:text-base tracking-[0.2em] uppercase mb-8">
@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row gap-5 items-center justify-center">
           <button 
-          // onClick={handleOrder} 
+          onClick={handleOrder} 
           className="btn-primary flex items-center gap-2 text-lg px-8 py-3 w-full sm:w-auto justify-center">
             Order on WhatsApp
           </button>
