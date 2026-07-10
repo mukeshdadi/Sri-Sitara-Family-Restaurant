@@ -17,15 +17,15 @@ const Specials: React.FC = () => {
     },
     {
       id: 3,
-      name: "Chicken Curry",
-      desc: "Spicy and flavorful Andhra style chicken curry, perfect with rice.",
-      img: "/images/chicken-curry.png",
+      name: "Bucket Biryani",
+      desc: "A massive, festive bucket of our signature biryani, perfect for sharing.",
+      img: "/images/bucket-biryani.png",
     },
     {
       id: 4,
-      name: "Veg Meals",
-      desc: "Traditional South Indian Thali served with a variety of authentic curries.",
-      img: "/images/veg-meals.png",
+      name: "Veg & Non-Veg Meals",
+      desc: "A grand Thali featuring our finest selection of veg and non-veg delicacies.",
+      img: "/images/mixed-meals.png",
     }
   ];
 
