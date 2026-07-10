@@ -2,12 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 const Quotes: React.FC = () => {
   const quotes = [
-    "Good Food is Good Mood.",
-    "Every Meal is Made with Love.",
-    "Taste Brings Families Together.",
-    "Fresh Food. Happy Moments.",
-
-  ];
+  "Good Food, Good Mood.",
+  "Made with Love.",
+  "Fresh & Delicious.",
+  "Eat. Smile. Repeat.",
+];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

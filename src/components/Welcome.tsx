@@ -1,4 +1,5 @@
 import React from 'react';
+import customerImage from '../assets/customers.png';
 
 const Welcome: React.FC = () => {
   return (
@@ -30,8 +31,8 @@ const Welcome: React.FC = () => {
           {/* Right Image */}
           <div className="reveal img-hover-zoom rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(198,138,45,0.15)] relative max-w-lg mx-auto w-full">
             <img 
-              src="/images/restaurant-interior.png" 
-              alt="Sri Sitara Restaurant Interior" 
+              src={customerImage} 
+              alt="Happy customers at Sri Sitara" 
               className="w-full h-64 md:h-[400px] object-cover"
             />
             {/* Decorative Element */}

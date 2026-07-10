@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import receptionImg from '../assets/reception.png';
+import table1Img from '../assets/table1.png';
+import table2Img from '../assets/table2.png';
+import customersImg from '../assets/items.png';
 
 const Gallery: React.FC = () => {
   const images = [
-    "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800&auto=format&fit=crop", // Spicy chicken fry
-    "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?q=80&w=800&auto=format&fit=crop", // Biryani
-    "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=800&auto=format&fit=crop", // Chicken leg piece
-    "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?q=80&w=800&auto=format&fit=crop", // Rich curry
-    "https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=800&auto=format&fit=crop", // Biryani pot
-    "https://images.unsplash.com/photo-1559742811-822873691df8?q=80&w=800&auto=format&fit=crop"  // Prawns
+    { src: receptionImg, alt: 'Restaurant reception area' },
+    { src: table1Img, alt: 'Restaurant dining table view' },
+    { src: table2Img, alt: 'Table setup and seating' },
+    { src: customersImg, alt: 'Guests enjoying the restaurant atmosphere' },
   ];
 
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
@@ -17,18 +19,18 @@ const Gallery: React.FC = () => {
     <section id="gallery" className="bg-secondary">
       <div className="container mx-auto">
         <h2 className="section-title reveal">Our Gallery</h2>
-        <p className="section-subtitle reveal">A glimpse of our ambiance and authentic dishes.</p>
+        <p className="section-subtitle reveal">A look inside Sri Sitara — reception, dining tables, and customer seating.</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {images.map((img, idx) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+          {images.map((image, idx) => (
             <div 
               key={idx} 
-              className="relative overflow-hidden rounded-xl cursor-pointer group h-64 lg:h-56 reveal"
-              onClick={() => setLightboxImage(img)}
+              className="relative overflow-hidden rounded-xl cursor-pointer group aspect-[4/3] reveal"
+              onClick={() => setLightboxImage(image.src)}
             >
               <img 
-                src={img} 
-                alt={`Gallery ${idx + 1}`} 
+                src={image.src} 
+                alt={image.alt} 
                 loading="lazy"
                 className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
               />
