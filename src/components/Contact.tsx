@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
             </div>
 
             <a
-  href="https://maps.google.com/?q=Draksharama,Andhra+Pradesh"
+  href="https://www.google.com/maps?q=16.7894451,82.0667358"
   target="_blank"
   rel="noreferrer"
   className="
@@ -74,18 +74,18 @@ const Contact: React.FC = () => {
 
           {/* Map (Placeholder for iframe) */}
           <div className="h-96 lg:h-auto min-h-[400px] relative grayscale hover:grayscale-0 transition duration-1000">
-             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15264.426743936647!2d82.0463996229562!3d16.786522851457497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a382103db8d5cf1%3A0x6a0c5c8a9561cc2c!2sDraksharamam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1704200000000!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Google Maps"
-                className="absolute inset-0"
-              ></iframe>
-          </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3819.743255980202!2d82.06675!3d16.7894444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTbCsDQ3JzIyLjAiTiA4MsKwMDQnMDAuMyJF!5e0!3m2!1sen!2sin!4v1783745771420!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="strict-origin-when-cross-origin"
+    title="Sri Sitara Family Restaurant"
+    className="absolute inset-0"
+  />
+</div>
 
         </div>
       </div>
