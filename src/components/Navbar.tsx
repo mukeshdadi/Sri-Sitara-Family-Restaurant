@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo from "../assets/SS logo.png";
+import OrderModal from './OrderModal';
+
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isOrderModalOpen, setIsOrderModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +25,12 @@ const Navbar: React.FC = () => {
   ];
 
   const handleOrderNow = () => {
-    window.open('https://wa.me/919505634433', '_blank');
+    setIsOrderModalOpen(true);
   };
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-5'}`}>
+    <>
+      <nav className={`fixed w-full z-40 transition-all duration-300 ${isScrolled ? 'glass-nav py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-5 flex justify-between items-center">
         {/* Logo Section */}
           <div className="flex items-center gap-4">
@@ -92,6 +96,12 @@ const Navbar: React.FC = () => {
         </div>
       )}
     </nav>
+    <OrderModal 
+      isOpen={isOrderModalOpen} 
+      onClose={() => setIsOrderModalOpen(false)}
+      phoneNumber="919505634433"
+    />
+    </>
   );
 };
 
